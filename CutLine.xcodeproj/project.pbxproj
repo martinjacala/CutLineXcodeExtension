@@ -10,7 +10,37 @@
 		371ECC242171155E00269201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371ECC232171155E00269201 /* AppDelegate.swift */; };
 		371ECC262171156000269201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371ECC252171156000269201 /* Assets.xcassets */; };
 		371ECC292171156000269201 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371ECC272171156000269201 /* MainMenu.xib */; };
+		371ECC382171158200269201 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371ECC372171158200269201 /* Cocoa.framework */; };
+		371ECC3B2171158200269201 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371ECC3A2171158200269201 /* SourceEditorExtension.swift */; };
+		371ECC3D2171158200269201 /* CutCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371ECC3C2171158200269201 /* CutCommand.swift */; };
+		371ECC422171158200269201 /* CutLineXcodeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 371ECC352171158200269201 /* CutLineXcodeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37CAE3392172674D00793FFE /* BetterCutUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE3382172674D00793FFE /* BetterCutUtils.swift */; };
+		37CAE33B217267D700793FFE /* CopyCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE33A217267D700793FFE /* CopyCommand.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		371ECC402171158200269201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371ECC182171155E00269201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 371ECC342171158200269201;
+			remoteInfo = CutLineXcodeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		371ECC462171158200269201 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				371ECC422171158200269201 /* CutLineXcodeExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		371ECC202171155E00269201 /* CutLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +49,14 @@
 		371ECC282171156000269201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		371ECC2A2171156000269201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		371ECC2B2171156000269201 /* CutLine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CutLine.entitlements; sourceTree = "<group>"; };
+		371ECC352171158200269201 /* CutLineXcodeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CutLineXcodeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		371ECC372171158200269201 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		371ECC3A2171158200269201 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		371ECC3C2171158200269201 /* CutCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCommand.swift; sourceTree = "<group>"; };
+		371ECC3E2171158200269201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371ECC3F2171158200269201 /* CutLineXcodeExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CutLineXcodeExtension.entitlements; sourceTree = "<group>"; };
+		37CAE3382172674D00793FFE /* BetterCutUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterCutUtils.swift; sourceTree = "<group>"; };
+		37CAE33A217267D700793FFE /* CopyCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		371ECC322171158200269201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371ECC382171158200269201 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				371ECC222171155E00269201 /* CutLine */,
+				371ECC392171158200269201 /* CutLineXcodeExtension */,
+				371ECC362171158200269201 /* Frameworks */,
 				371ECC212171155E00269201 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				371ECC202171155E00269201 /* CutLine.app */,
+				371ECC352171158200269201 /* CutLineXcodeExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +109,27 @@
 			path = CutLine;
 			sourceTree = "<group>";
 		};
+		371ECC362171158200269201 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				371ECC372171158200269201 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		371ECC392171158200269201 /* CutLineXcodeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				371ECC3A2171158200269201 /* SourceEditorExtension.swift */,
+				37CAE33A217267D700793FFE /* CopyCommand.swift */,
+				371ECC3C2171158200269201 /* CutCommand.swift */,
+				37CAE3382172674D00793FFE /* BetterCutUtils.swift */,
+				371ECC3E2171158200269201 /* Info.plist */,
+				371ECC3F2171158200269201 /* CutLineXcodeExtension.entitlements */,
+			);
+			path = CutLineXcodeExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,15 +140,34 @@
 				371ECC1C2171155E00269201 /* Sources */,
 				371ECC1D2171155E00269201 /* Frameworks */,
 				371ECC1E2171155E00269201 /* Resources */,
+				371ECC462171158200269201 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				371ECC412171158200269201 /* PBXTargetDependency */,
 			);
 			name = CutLine;
 			productName = CutLine;
 			productReference = 371ECC202171155E00269201 /* CutLine.app */;
 			productType = "com.apple.product-type.application";
+		};
+		371ECC342171158200269201 /* CutLineXcodeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371ECC432171158200269201 /* Build configuration list for PBXNativeTarget "CutLineXcodeExtension" */;
+			buildPhases = (
+				371ECC312171158200269201 /* Sources */,
+				371ECC322171158200269201 /* Frameworks */,
+				371ECC332171158200269201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CutLineXcodeExtension;
+			productName = CutLineXcodeExtension;
+			productReference = 371ECC352171158200269201 /* CutLineXcodeExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +180,9 @@
 				ORGANIZATIONNAME = "Martin Jacala";
 				TargetAttributes = {
 					371ECC1F2171155E00269201 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					371ECC342171158200269201 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -109,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				371ECC1F2171155E00269201 /* CutLine */,
+				371ECC342171158200269201 /* CutLineXcodeExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +216,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		371ECC332171158200269201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,7 +234,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		371ECC312171158200269201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371ECC3B2171158200269201 /* SourceEditorExtension.swift in Sources */,
+				37CAE3392172674D00793FFE /* BetterCutUtils.swift in Sources */,
+				37CAE33B217267D700793FFE /* CopyCommand.swift in Sources */,
+				371ECC3D2171158200269201 /* CutCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		371ECC412171158200269201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 371ECC342171158200269201 /* CutLineXcodeExtension */;
+			targetProxy = 371ECC402171158200269201 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		371ECC272171156000269201 /* MainMenu.xib */ = {
@@ -266,6 +385,7 @@
 		371ECC2F2171156000269201 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CutLine/CutLine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -285,6 +405,7 @@
 		371ECC302171156000269201 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CutLine/CutLine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +418,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.apptives.CutLine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		371ECC442171158200269201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CutLineXcodeExtension/CutLineXcodeExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y4B8Y4356A;
+				INFOPLIST_FILE = CutLineXcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptives.CutLine.CutLineXcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		371ECC452171158200269201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CutLineXcodeExtension/CutLineXcodeExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y4B8Y4356A;
+				INFOPLIST_FILE = CutLineXcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptives.CutLine.CutLineXcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -318,6 +479,15 @@
 			buildConfigurations = (
 				371ECC2F2171156000269201 /* Debug */,
 				371ECC302171156000269201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371ECC432171158200269201 /* Build configuration list for PBXNativeTarget "CutLineXcodeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371ECC442171158200269201 /* Debug */,
+				371ECC452171158200269201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
